@@ -765,7 +765,7 @@ HTML_TEMPLATE = """
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Media to Summary Bot</title>
+    <title>Media to Text Bot</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
     <style>
@@ -986,8 +986,8 @@ HTML_TEMPLATE = """
     <div class="app-container">
         <div class="main-card">
             <div class="header">
-                <h1><i class="fas fa-microphone-alt"></i> Media to Summary Bot</h1>
-                <p>Transform your media files into accurate summaries</p>
+                <h1><i class="fas fa-microphone-alt"></i> Media to Text Bot</h1>
+                <p>Transform your audio & video into accurate text absolutely for free</p>
             </div>
             <div class="card-body">
                 <form id="transcriptionForm" enctype="multipart/form-data" method="post">
@@ -1015,7 +1015,7 @@ HTML_TEMPLATE = """
                         </div>
                     </div>
                     <button type="button" id="uploadButton" class="btn btn-primary w-100">
-                        <i class="fas fa-magic"></i> Upload & Summarize
+                        <i class="fas fa-magic"></i> Upload & transcribe
                     </button>
                 </form>
                 <div id="statusContainer"></div>
