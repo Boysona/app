@@ -44,7 +44,7 @@ ASSEMBLYAI_API_KEY = os.environ.get("ASSEMBLYAI_API_KEY", "f692ac671b6e4d388e53f
 
 BOT_TOKENS = [
     "8107285502:AAGsDRaO8aY8dYnaDHkniWoEBHDD4svuFU8",
-    
+    "8229893546:AAEOFMCw2q_iQu1sWKqygGNb5CiIOY8IUnY",
 ]
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyB1HVBY1a8XGE3bijTNJVBO1W759yK5KGc")
 WEBHOOK_BASE = os.environ.get("WEBHOOK_BASE", "https://top-selene-cadenuux57-5d5cdd61.koyeb.app/")
