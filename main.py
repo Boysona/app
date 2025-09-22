@@ -45,7 +45,7 @@ BOT_TOKENS = [
     "8229893546:AAEOFMCw2q_iQu1sWKqygGNb5CiIOY8IUnY",
 ]
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyDOsEOu98sYFCzPZtvk9nZXOc3mitjuq-I")
-WEBHOOK_BASE = os.environ.get("WEBHOOK_BASE", "https://speech-recognition-bot.onrender.com")
+WEBHOOK_BASE = os.environ.get("WEBHOOK_BASE", "top-selene-cadenuux57-5d5cdd61.koyeb.app/")
 ADMIN_ID = int(os.environ.get("ADMIN_ID", "6964068910"))
 SECRET_KEY = os.environ.get("SECRET_KEY", "super-secret-please-change")
 MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://hoskasii:GHyCdwpI0PvNuLTg@cluster0.dy7oe7t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
