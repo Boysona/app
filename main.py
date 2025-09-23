@@ -30,7 +30,7 @@ def set_bot_info_and_startup():
         )
         # Short description (English)
         bot.set_my_short_description(
-            "Transcribe and Summarize your audio and video in seconds totally free\n\nFor help? Contact: @boyso20"
+            "Transcribe and Summarize your audio and video in seconds totally free for help? Contact: @boyso20"
         )
         # English version with language_code
         bot.set_my_description(
@@ -38,7 +38,7 @@ def set_bot_info_and_startup():
             language_code="en"
         )
         bot.set_my_short_description(
-            "Transcribe and Summarize your audio and video in seconds totally free\n\nFor help? Contact: @boyso20",
+            "Transcribe and Summarize your audio and video in seconds totally free for help? Contact: @boyso20",
             language_code="en"
         )
         # Arabic version
@@ -58,7 +58,7 @@ def set_bot_info_and_startup():
             language_code="es"
         )
         bot.set_my_short_description(
-            "Transcribe y resume tu audio y video en segundos totalmente gratis\n\n¿Ayuda? Contacto: @boyso20",
+            "Transcribe y resume tu audio y video en segundos totalmente gratis ¿Ayuda? Contacto: @boyso20",
             language_code="es"
         )
 
@@ -68,7 +68,7 @@ def set_bot_info_and_startup():
             language_code="uz"
         )
         bot.set_my_short_description(
-            "Ovoz va videongizni soniyalar ichida transkribe va xulosa qiling, butunlay bepul\n\nYordam: @boyso20",
+            "Ovoz va videongizni soniyalar ichida transkribe va xulosa qiling, butunlay bepul Yordam: @boyso20",
             language_code="uz"
         )
 
