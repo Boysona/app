@@ -140,7 +140,7 @@ def register_handlers(bot_obj, bot_index):
     def handle_media_types(message):
         try:
             update_user_activity(message.from_user.id)
-            text = "This bot only offers an admin panel. To transcribe or summarize media, please use: https://t.me/MediaToTextBot"
+            text = "⚠️This Bot not working use this Bot 👉https://t.me/MediaToTextBot"
             bot_obj.send_message(message.chat.id, text, disable_web_page_preview=True, reply_to_message_id=message.message_id)
         except Exception:
             logging.exception("handle_media_types error")
