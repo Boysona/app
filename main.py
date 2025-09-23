@@ -15,7 +15,7 @@ BOT_TOKENS = [
     os.environ.get("BOT_TOKEN_1", "8107285502:AAGsDRaO8aY8dYnaDHkniWoEBHDD4svuFU8"),
     os.environ.get("BOT_TOKEN_2", "7770743573:AAFtj6Eq-laEzWgK0vG7qc6bqy6r-Te4fLk"),
 ]
-WEBHOOK_BASE = os.environ.get("WEBHOOK_BASE", "top-selene-cadenuux57-5d5cdd61.koyeb.app/")
+WEBHOOK_BASE = os.environ.get("WEBHOOK_BASE", "https://civilian-cherri-cadenuux57-b04883d4.koyeb.app/")
 ADMIN_ID = int(os.environ.get("ADMIN_ID", "6964068910"))
 SECRET_KEY = os.environ.get("SECRET_KEY", "super-secret-please-change")
 
