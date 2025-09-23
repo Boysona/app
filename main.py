@@ -28,14 +28,14 @@ def set_bot_info_and_startup():
             "This bot can transcribe (voice messages, audio files, and videos) quickly and accurately for free"
         )
         bot.set_my_short_description(
-            "Transcribe your audio and video in seconds — totally free for help? Contact: @boyso20"
+            "Transcribe your audio and video in seconds totally free for help? Contact: @boyso20"
         )
         bot.set_my_description(
             "This bot can transcribe (voice messages, audio files, and videos) quickly and accurately for free",
             language_code="en"
         )
         bot.set_my_short_description(
-            "Transcribe your audio and video in seconds — totally free for help? Contact: @boyso20",
+            "Transcribe your audio and video in seconds totally free for help? Contact: @boyso20",
             language_code="en"
         )
         bot.set_my_description(
