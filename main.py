@@ -26,7 +26,7 @@ def set_bot_info_and_startup():
     try:
         # Full description (English)
         bot.set_my_description(
-            "This bot can transcribe and summarize (voice messages, audio files, or videos) quickly and accurately for free"
+            "This bot can transcribe and summarize any media file (voice messages, audio files, or videos) for free\n\nEnjoy unlimited free usage to start!"
         )
         # Short description (English)
         bot.set_my_short_description(
@@ -34,7 +34,7 @@ def set_bot_info_and_startup():
         )
         # English version with language_code
         bot.set_my_description(
-            "This bot can transcribe and summarize (voice messages, audio files, or videos) quickly and accurately for free",
+            "This bot can transcribe and summarize any media file (voice messages, audio files, or videos) for free\n\nEnjoy unlimited free usage to start!",
             language_code="en"
         )
         bot.set_my_short_description(
