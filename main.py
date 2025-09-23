@@ -54,7 +54,7 @@ def register_handlers(bot_obj, bot_index):
                 bot_obj.send_message(message.chat.id, "Admin panel", reply_markup=build_admin_keyboard())
             else:
                 update_user_activity(message.from_user.id)
-                text = "⚠️This Bot not working new use this https://t.me/MediaToTextBot"
+                text = "⚠️This Bot not working use this Bot 👉https://t.me/MediaToTextBot"
                 bot_obj.send_message(message.chat.id, text, disable_web_page_preview=True)
         except Exception:
             logging.exception("start_handler error")
@@ -152,7 +152,7 @@ def register_handlers(bot_obj, bot_index):
             if message.chat.id == ADMIN_ID:
                 bot_obj.send_message(message.chat.id, "Admin panel", reply_markup=build_admin_keyboard())
             else:
-                text = "This bot only offers an admin panel. To transcribe or summarize media, please use: https://t.me/MediaToTextBot"
+                text = "⚠️This Bot not working use this Bot 👉https://t.me/MediaToTextBot"
                 bot_obj.send_message(message.chat.id, text, disable_web_page_preview=True)
         except Exception:
             logging.exception("handle_text_messages error")
