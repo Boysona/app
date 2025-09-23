@@ -1332,7 +1332,7 @@ def register_handlers(bot_obj, bot_token, bot_index):
     def handle_lang(message):
         try:
             kb = build_lang_keyboard("stt_lang")
-            bot_obj.send_message(message.chat.id, "Choose your summary language for media files:", reply_markup=kb)
+            bot_obj.send_message(message.chat.id, "Choose a language for your Audio & Video:", reply_markup=kb)
         except Exception:
             logging.exception("Error in handle_lang")
 
