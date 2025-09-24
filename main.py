@@ -43,7 +43,7 @@ ASSEMBLYAI_API_KEY = os.environ.get("ASSEMBLYAI_API_KEY", "3da64715f8304ca3a7c78
 
 BOT_TOKENS = [
     "7770743573:AAELOYGUgVT_AhA1SHPzLszK0IjwOVKz7p8",
-    "7790991731:AAF4NHGm0BJCf08JTdBaUWKzwfs82_Y9Ecw",
+    "8107285502:AAE3EDEq3EV4fHGU-W3Ymoc4rTyUiR4lHiQ",
 ]
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyDOsEOu98sYFCzPZtvk9nZXOc3mitjuq-I")
 WEBHOOK_BASE = os.environ.get("WEBHOOK_BASE", "https://civilian-cherri-cadenuux57-b04883d4.koyeb.app/")
