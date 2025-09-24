@@ -60,8 +60,8 @@ except Exception:
     client = None
 
 db = client[DB_NAME] if client else None
-users_collection = db["users"] if db else None
-groups_collection = db["groups"] if db else None
+users_collection = db["users"] if db is not None else None
+groups_collection = db["groups"] if db is not None else None
 transcriptions_collection = db["transcriptions"] if db else None
 
 TRANSCRIPTION_TTL_SECONDS = 24 * 3600
