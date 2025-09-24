@@ -24,4 +24,4 @@ COPY . /app
 EXPOSE 8080
 
 # Start with gunicorn (ensure `gunicorn` is in requirements.txt)
-CMD ["gunicorn", "main:app", "--bind", "0.0.0.0:8080", "--workers", "4", "--threads", "4", "--timeout", "120"]
+CMD ["gunicorn", "main:app", "--bind", "0.0.0.0:8080", "--workers", "2", "--threads", "4", "--timeout", "120"]
