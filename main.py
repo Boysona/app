@@ -5,7 +5,7 @@ from datetime import datetime
 from flask import Flask, request
 
 BOT_TOKEN = "7770743573:AAH418v65goHPCtGE4vTKo5FawIHdrcolUc"
-WEBHOOK_URL_BASE = "https://civilian-cherri-cadenuux57-b04883d4.koyeb.app/"
+WEBHOOK_URL_BASE = "https://striking-carry-cadenuux57-26c34a7a.koyeb.app/"
 WEBHOOK_URL_PATH = f"/{BOT_TOKEN}"
 WEBHOOK_URL = WEBHOOK_URL_BASE + WEBHOOK_URL_PATH
 PORT = int(os.environ.get("PORT", 8443))
