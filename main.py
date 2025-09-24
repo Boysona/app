@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 from flask import Flask, request
 
-BOT_TOKEN = "7770743573:AAH418v65goHPCtGE4vTKo5FawIHdrcolUc"
+BOT_TOKEN = "7790991731:AAF4NHGm0BJCf08JTdBaUWKzwfs82_Y9Ecw"
 WEBHOOK_URL_BASE = "https://striking-carry-cadenuux57-26c34a7a.koyeb.app/"
 WEBHOOK_URL_PATH = f"/{BOT_TOKEN}"
 WEBHOOK_URL = WEBHOOK_URL_BASE + WEBHOOK_URL_PATH
