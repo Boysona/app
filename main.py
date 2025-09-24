@@ -47,12 +47,12 @@ BOT_TOKENS = [
     "8229893546:AAEOFMCw2q_iQu1sWKqygGNb5CiIOY8IUnY",
 ]
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyB1HVBY1a8XGE3bijTNJVBO1W759yK5KGc")
-WEBHOOK_BASE = os.environ.get("WEBHOOK_BASE", "top-selene-cadenuux57-5d5cdd61.koyeb.app/")
+WEBHOOK_BASE = os.environ.get("WEBHOOK_BASE", "https://civilian-cherri-cadenuux57-b04883d4.koyeb.app/")
 ADMIN_ID = int(os.environ.get("ADMIN_ID", "6964068910"))
 SECRET_KEY = os.environ.get("SECRET_KEY", "super-secret-please-change")
 MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://hoskasii:GHyCdwpI0PvNuLTg@cluster0.dy7oe7t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "telegram_bot_db")
-LOCAL_TELEGRAM_API_URL = os.environ.get("LOCAL_TELEGRAM_API_URL", None)
+LOCAL_TELEGRAM_API_URL = os.environ.get("https://civilian-cherri-cadenuux57-b04883d4.koyeb.app/",)
 
 client = MongoClient(MONGO_URI)
 db = client[DB_NAME]
