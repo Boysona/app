@@ -1096,12 +1096,12 @@ def register_handlers(bot_obj, bot_token, bot_index):
             except Exception:
                 pass
             welcome_text = (
-     f"👋 Salaam!    \n"
+     f"👋 Welcome!    \n"
                 "• Send me\n"
                 "• voice message\n"
                 "• audio file\n"
                 "• video\n"
-                "• to transcribe for free 💗Other free bot is: @TextToSpeechBBot"
+                "• to transcribe for free"
             )
             bot_obj.send_message(call.message.chat.id, welcome_text)
             bot_obj.answer_callback_query(call.id, f"✅ Language set to {lang_label}")
