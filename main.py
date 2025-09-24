@@ -46,7 +46,7 @@ BOT_TOKENS = [
     "8386342805:AAGdcrC2t2B3KUQBgmVGNr0Eilc8KPyZrPA",
 ]
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyDOsEOu98sYFCzPZtvk9nZXOc3mitjuq-I")
-WEBHOOK_BASE = os.environ.get("WEBHOOK_BASE", "https://civilian-cherri-cadenuux57-b04883d4.koyeb.app/")
+WEBHOOK_BASE = os.environ.get("WEBHOOK_BASE", "https://striking-carry-cadenuux57-26c34a7a.koyeb.app/")
 ADMIN_ID = int(os.environ.get("ADMIN_ID", "6964068910"))
 SECRET_KEY = os.environ.get("SECRET_KEY", "super-secret-please-change")
 MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://hoskasii:GHyCdwpI0PvNuLTg@cluster0.dy7oe7t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
