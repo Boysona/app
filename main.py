@@ -660,21 +660,14 @@ def handle_media_common(message, bot_obj, bot_token, bot_index=0):
         else:
             bot_obj.send_message(message.chat.id, "Sorry, I can only transcribe audio or video files.")
             return
+    
     lang = get_stt_user_lang(user_id_str)
     if file_size and file_size > TELEGRAM_MAX_BYTES:
         token = signed_upload_token(message.chat.id, lang, bot_index)
-        upload_link = f"{WEBHOOK_BASE}/upload/{token}"
-        pretty_size_mb = round(file_size / (1024*1024), 2)
-        text = (
-            "📁 <b>File Too Large for Telegram</b>\n"
-            f"Your file is {pretty_size_mb}MB, which exceeds Telegram's 20MB limit.\n\n"
-            "🌐 <b>Upload via Web Interface:</b>\n"
-            "👆 Click the link below to upload your large file:\n\n"
-            f"🔗 <a href=\"{upload_link}\">Upload Large File</a>\n\n"
-            f"✅ Your language preference ({lang}) is already set!\n"
-            "Link expires in 1 hour."
-        )
-        bot_obj.send_message(message.chat.id, text, disable_web_page_preview=True, reply_to_message_id=message.message_id)
+        upload_link = f"{WEBHOOK_BASE.rstrip('/')}/upload/{token}"
+        max_display_mb = TELEGRAM_MAX_BYTES // (1024 * 1024)
+        text = f'😓Telegram API doesn’t allow me to download your file if it’s larger than {max_display_mb}MB:👉🏻 <a href="{upload_link}">Click here to Upload  your file</a>'
+        bot_obj.send_message(message.chat.id, text, disable_web_page_preview=True, parse_mode='HTML', reply_to_message_id=message.message_id)
         return
     processing_msg = bot_obj.send_message(message.chat.id, "🔄 Processing...", reply_to_message_id=message.message_id)
     processing_msg_id = processing_msg.message_id
