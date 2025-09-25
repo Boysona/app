@@ -252,7 +252,7 @@ def animate_processing_message(bot_obj, chat_id, message_id, stop_event):
     idx = 0
     while not stop_event():
         try:
-            bot_obj.edit_message_text(f"🔄 Processing{dots[idx % len(dots)]}", chat_id=chat_id, message_id=message_id)
+            bot_obj.edit_message_text(f"🔄 Processing {dots[idx % len(dots)]}", chat_id=chat_id, message_id=message_id)
         except Exception:
             pass
         idx = (idx + 1) % len(dots)
@@ -686,7 +686,7 @@ def handle_media_common(message, bot_obj, bot_token, bot_index=0):
         token = signed_upload_token(message.chat.id, lang, bot_index)
         upload_link = f"{WEBHOOK_BASE.rstrip('/')}/upload/{token}"
         max_display_mb = TELEGRAM_MAX_BYTES // (1024 * 1024)
-        text = f'⚠️ The file is too large! Maximum allowed size is {max_display_mb}MB. Upload here: <a href="{upload_link}">Upload Link</a>'
+        text = f'🫩Telegram API doesn’t allow me to download your file if it’s larger than {max_display_mb}MB: <a href="{upload_link}">Please upload your file here</a>'
         bot_obj.send_message(message.chat.id, text, disable_web_page_preview=True, parse_mode='HTML', reply_to_message_id=message.message_id)
         return
     processing_msg = bot_obj.send_message(message.chat.id, "🔄 Processing...", reply_to_message_id=message.message_id)
