@@ -1031,7 +1031,7 @@ def summarize_with_gemini(text: str, language: str) -> str:
         language_name = label.split(" ",1)[-1]
     except Exception:
         language_name = str(language)
-    instruction = f"Summarize the following text in {language_name}. Produce a concise, professional, high-quality summary that inspires confidence.Do not include introductions, disclaimers, extra notes, or metadata. Output only the summary."
+    instruction = f"Summarize the following text in {language_name}. Produce a concise, professional, high-quality Clean up that inspires confidence.Do not include introductions, disclaimers, extra notes, or metadata. Output only the Clean up."
     prompt = f"{instruction}\n\n{text}"
     response = model.generate_content(prompt)
     return response.text.strip()
