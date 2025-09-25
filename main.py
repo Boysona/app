@@ -938,7 +938,7 @@ HTML_TEMPLATE = """
                 spinner.style.display = 'none';
                 if (xhr.status === 200) {
                     statusMessageDiv.style.color = '#28a745';
-                    statusMessageDiv.textContent = 'Success! Your summary will be sent to your Telegram chat shortly.';
+                    statusMessageDiv.textContent = 'Success! Your Transcription  will be sent to your Telegram chat shortly.';
                 } else {
                     statusMessageDiv.style.color = 'red';
                     statusMessageDiv.textContent = `Error: ${xhr.responseText || 'An unknown error occurred.'}`;
