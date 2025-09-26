@@ -52,7 +52,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "super-secret-please-change")
 MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://hoskasii:GHyCdwpI0PvNuLTg@cluster0.dy7oe7t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "telegram_bot_db")
 
-REQUIRED_CHANNEL = "@guruubka_wasmada"
+REQUIRED_CHANNEL = "@Voice_to_textt"
 
 client = MongoClient(MONGO_URI)
 db = client[DB_NAME]
