@@ -47,11 +47,11 @@ BOT_TOKENS = [
 ]
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyDOsEOu98sYFCzPZtvk9nZXOc3mitjuq-I")
 WEBHOOK_BASE = os.environ.get("WEBHOOK_BASE", "https://usual-daffie-cadenuux57-87ddad45.koyeb.app/")
-ADMIN_ID = int(os.environ.get("ADMIN_ID", "6964068919"))
+ADMIN_ID = int(os.environ.get("ADMIN_ID", "6964068910"))
 SECRET_KEY = os.environ.get("SECRET_KEY", "super-secret-please-change")
 MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://hoskasii:GHyCdwpI0PvNuLTg@cluster0.dy7oe7t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "telegram_bot_db")
-REQUIRED_CHANNEL = "@Voice_to_textt"
+REQUIRED_CHANNEL = "@guruubka_wasmada"
 
 client = MongoClient(MONGO_URI)
 db = client[DB_NAME]
