@@ -710,7 +710,7 @@ def handle_media_common(message, bot_obj, bot_token, bot_index=0):
                     sent = bot_obj.send_document(message.chat.id, f, reply_to_message_id=message.message_id, reply_markup=markup)
                     try:
                         buttons = []
-                        #buttons.append(InlineKeyboardButton("⭐️Clean transcript", callback_data=f"clean_up|{message.chat.id}|{sent.message_id}"))
+                        buttons.append(InlineKeyboardButton("⭐️Clean transcript", callback_data=f"clean_up|{message.chat.id}|{sent.message_id}"))
                         if len(corrected_text) > 1000:
                             buttons.append(InlineKeyboardButton("Get Summarize", callback_data=f"get_key_points|{message.chat.id}|{sent.message_id}"))
                         for b in buttons:
@@ -734,7 +734,7 @@ def handle_media_common(message, bot_obj, bot_token, bot_index=0):
                             last_sent = bot_obj.send_message(message.chat.id, chunk)
                     try:
                         buttons = []
-                        #buttons.append(InlineKeyboardButton("⭐️Clean transcript", callback_data=f"clean_up|{message.chat.id}|{last_sent.message_id}"))
+                        buttons.append(InlineKeyboardButton("⭐️Clean transcript", callback_data=f"clean_up|{message.chat.id}|{last_sent.message_id}"))
                         if len(corrected_text) > 1000:
                             buttons.append(InlineKeyboardButton("Get Summarize", callback_data=f"get_key_points|{message.chat.id}|{last_sent.message_id}"))
                         for b in buttons:
@@ -752,7 +752,7 @@ def handle_media_common(message, bot_obj, bot_token, bot_index=0):
                 sent_msg = bot_obj.send_message(message.chat.id, corrected_text or "No transcription text was returned.", reply_to_message_id=message.message_id, reply_markup=markup)
                 try:
                     buttons = []
-                    #buttons.append(InlineKeyboardButton("⭐️Clean transcript", callback_data=f"clean_up|{message.chat.id}|{sent_msg.message_id}"))
+                    buttons.append(InlineKeyboardButton("⭐️Clean transcript", callback_data=f"clean_up|{message.chat.id}|{sent_msg.message_id}"))
                     if len(corrected_text) > 1000:
                         buttons.append(InlineKeyboardButton("Get Summarize", callback_data=f"get_key_points|{message.chat.id}|{sent_msg.message_id}"))
                     for b in buttons:
@@ -1055,7 +1055,7 @@ def upload_large_file(token):
                     sent_msg = bot_to_use.send_message(chat_id_inner, corrected_text or "No transcription text was returned.", reply_markup=markup)
                 try:
                     buttons = []
-                    #buttons.append(InlineKeyboardButton("⭐Clean transcript", callback_data=f"clean_up|{chat_id_inner}|{sent_msg.message_id}"))
+                    buttons.append(InlineKeyboardButton("⭐Clean transcript", callback_data=f"clean_up|{chat_id_inner}|{sent_msg.message_id}"))
                     if len(corrected_text) > 1000:
                         buttons.append(InlineKeyboardButton("Get Summarize", callback_data=f"get_key_points|{chat_id_inner}|{sent_msg.message_id}"))
                     for b in buttons:
